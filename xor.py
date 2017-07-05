@@ -33,12 +33,12 @@ for i in range(1,40000):
     h2=1/(1+np.exp(-z2))
     #This dz term assumes binary cross-entropy loss
     dz2 = h2-y 
-    # You could also have stuck with squared error loss, the extra h2 terms
+   
     # are the derivative of the sigmoid transfer function. 
     # It converges slower though:
     # dz2 = (h2-y) * h2 * (1-h2)
 
-    # This is just the same as you had before, but with less temp variables
+   =
     dw2 = np.dot(h1.T, dz2)
     db2 = np.sum(dz2, axis=0)
 
